@@ -27,9 +27,9 @@ spec:
             - name: web
               containerPort: 8080
           imagePullPolicy: IfNotPresent
-#          livenessProbe:
-#            httpGet:
-#              path: /health
-#              port: 8080
-#            initialDelaySeconds: 3
-#            periodSeconds: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 1
+            periodSeconds: 10
